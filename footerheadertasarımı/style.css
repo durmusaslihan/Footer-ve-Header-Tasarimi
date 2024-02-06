@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-kapsayici{
+    background: linear-gradient(#f0eee4, #fff);
+    color: rgba(0 ,0 ,0 ,0.9);
+    font-weight: 700;
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.header-kapsayici a{
+   text-decoration: none;
+   color: rgba(0 ,0 ,0 ,0.9);
+}
+.header-navbar a{
+  font-size: 16px;
+}
+.header-ust{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    width: 100%;
+    background-color: #cdb38b;
+    color: #fff;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.header-ust span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 20s linear infinite;
+}
+.header-ust span:hover {
+    animation-play-state: paused
+}
+ 
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.header-orta{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.header-orta-sol{
+    display: flex;
+    flex-direction: row;
+}
+.header-orta a{
+  font-size: 14px;
+}
+.header-orta-sağ{
+    display: flex;
+    flex-direction: row;
+}
+.header-fontdesign{
+padding-inline: 20px;
+font-size: 15px;
+}
+.header-son{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header-logo img{
+  width: 85%;
+  padding-left: 10px;
+
+}
+.header-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.header-navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.header-navbar li {
+    float: left;
+    padding-inline: 15px;
+}
+.header-navbar li a:hover {
+    color: #cdb38b;;
+}
+.arama-kutusu {
+    width: 200px;
+    position: relative; 
+    padding: 20px;
+
+  }
+  .arama-kutusu input {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #cdb38b;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .arama-kutusu i {
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    color: rgba(0 ,0 ,0 ,0.9);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .arama-kutusu p{
+    color: #cdb38b;
+    display: none;
+    position: absolute;
+  }
+  .footer-kapsayici{
+    background: linear-gradient(#f0eee4, #fff);
+    padding-top:20px ;
+    display: flex;
+    flex-direction: column;
+  }
+  .tumkontrol form{
+    display: flex;
+    flex-direction: row;
+  }
+  .tumkontrol form p, a{
+    font-size: 13px;
+    color: black;
+    font-weight: 700;
+    padding: 0 0 0 5px;
+  }
+  .e-bulten{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .e-bulten p{
+    font-weight: 700;
+    color: rgba(0 ,0 ,0 ,0.9);
+    font-size: 20px;
+  }
+  .inputbox ::placeholder{
+    color: #cdb38b;
+  }
+  #form{
+    position: relative;
+    padding: 15px ;
+  }
+  #form #email{
+    width: 300px;
+    background-color: #fff;
+    outline: none;
+    border: 2px solid #cdb38b;
+    padding: 10px;
+    border-radius: 10px ;
+    color: #cdb38b;
+    font-style: 18px ;
+  }
+  #form .inputbox{
+    position: relative;
+  }
+  #text{
+    display: block;
+    color: #cdb38b;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+  }
+  #form.invalid .inputbox:before{
+    position: absolute;
+    content: '';
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    z-index: 1000;
+  }
+  #form.valid .inputbox:before{
+    position: absolute;
+    content: '';
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    z-index: 1000;
+  }
+  .inputbox i{
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    color: #cdb38b;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    
+  }
+  .footer-kendisisi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    color: #fff;
+  }
+  .footer-kendisisi a ,p{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .footer-kendisisi p{
+    font-size: 19px;
+  }
+  .footer-kendisisi a:hover{
+    color: #cdb38b;
+  }
+  .footer-ayar{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+  }
+  .footer-iletisim-ayar{
+    justify-content: center;
+    align-items:center ;
+  }
+  .banka-adlari{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-ikon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0 40px 0;
+  }
+  .footer-font-design i{
+  color:  black;
+  font-size: 40px ;
+  display: block;
+  padding: 0 15px;
+  text-align: center;
+  }
+  .footer-font-design span{
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .footer-font-design p{
+    color: #cdb38b;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+  }
